@@ -353,7 +353,7 @@ if(LEVELDB_BUILD_TESTS)
   set(build_gmock ON)
 
   # This project is tested using GoogleTest.
-  add_subdirectory("third_party/googletest")
+  # Hopefully added directly, with earlier hack... add_subdirectory("third_party/googletest")
 
   # GoogleTest triggers a missing field initializers warning.
   if(LEVELDB_HAVE_NO_MISSING_FIELD_INITIALIZERS)
