@@ -3,7 +3,8 @@
 # found in the LICENSE file. See the AUTHORS file for names of contributors.
 
 # Hack by holroy
-set(CMAKE_CXX_COMPILER "/usr/bin/clang++ -mmacosx-version-min=1.13")
+set(CMAKE_C_COMPILER "/usr/bin/clang")
+set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 
 cmake_minimum_required(VERSION 3.9)
 # Keep the version below in sync with the one in db.h
