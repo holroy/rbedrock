@@ -24,12 +24,14 @@ namespace leveldb {
 		strm.avail_out = BUFSIZE;
 
 		auto res = deflateInit2(&strm, compressionLevel, Z_DEFLATED, _window(), 8, Z_DEFAULT_STRATEGY);
+		(void)res;
 		assert(res == Z_OK);
 		
 		int deflate_res = Z_OK;
 		while (strm.avail_in != 0)
 		{
 			int res = deflate(&strm, Z_NO_FLUSH);
+			(void)res;
 			assert(res == Z_OK);
 			if (strm.avail_out == 0)
 			{
