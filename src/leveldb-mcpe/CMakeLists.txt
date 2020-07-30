@@ -5,6 +5,8 @@
 # Hack by holroy
 set(CMAKE_C_COMPILER "/usr/bin/clang")
 set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+set(CMAKE_CXX_FLAGS "-mmacosx-version-min=10.13 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_C_FLAGS "-mmacosx-version-min=10.13 ${CMAKE_C_FLAGS}")
 
 cmake_minimum_required(VERSION 3.9)
 # Keep the version below in sync with the one in db.h
